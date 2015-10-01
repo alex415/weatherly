@@ -1,0 +1,65 @@
+/*======= Navbar Styling ============*/
+
+.container-fluid.nav {
+  margin-right: -15px;
+}
+
+#nav-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-bottom: 2px solid #D8D8D8;
+}
+
+.main-header {
+}
+
+.site-logo {
+  margin-top: -7px;
+  float: left;
+  font-family: Bitter;
+  font-size: 48px;
+  color: #F7A519;
+  line-height: 85px;
+  background-color: #FFFFFF;
+  padding-right: 60px;
+  padding-left: 40px;
+}
+
+.form-group {
+  padding-top: 15px;
+  padding-right: -15px;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.form-group.container {
+  padding-right: 0;
+}
+
+.nav-form {
+/*  text-align: center;*/
+}
+
+.form-control {
+  font-size: 25px;
+  border-radius: 0;
+  color: #D8D8D8;
+  border: solid 2px #D8D8D8;
+  max-width: 640px;
+  height: 50px;
+}
+
+.form-control:focus {
+  color: #F7A519;
+}
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
+  border-color: #F7A519;
+  box-shadow: 0 0px 0px #F7A519;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #D8D8D8;
+/*  font-family: 'myFont', Arial, Helvetica, sans-serif;*/
+}

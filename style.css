@@ -1,0 +1,165 @@
+body {
+  font-family: Bitter;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  padding-right: 0;
+}
+
+.col-xs-4 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.today-container {
+  height: 388px;
+  background-color: #F8E71C;
+  margin: 0;
+  padding: 0;
+}
+
+.today-section {
+  font-size: 15px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 52px;
+  padding-bottom: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 16px;
+}
+
+.city-section {
+  font-size: 35px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 27px;
+}
+
+.icon-section {
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.temperature-section {
+  font-size: 180px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 135px;
+}
+
+.left-column {
+  background-color: #FFD54F;
+  font: #FFFFFF;
+  height: 186px;
+  text-align: center;
+}
+
+.middle-column {
+  background-color: #FFB74D;
+  font: #FFFFFF;
+  height: 186px;
+  text-align: center;
+}
+
+.right-column {
+  background-color: #FFA000;
+  font: #FFFFFF;
+  height: 186px;
+  text-align: center;
+}
+
+.icon-column {
+  padding-top: 24px;
+  padding-bottom: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.left-temperature {
+  font-size: 85px;
+  color: #FFFFFF;
+  padding-top: 0;
+  padding-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 60px;
+}
+
+.middle-temperature {
+  font-size: 85px;
+  color: #FFFFFF;
+  padding-top: 0;
+  padding-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 60px;
+}
+
+.right-temperature {
+  font-size: 85px;
+  color: #FFFFFF;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 60px;
+}
+
+.left-date {
+  font-size: 45px;
+  color: #FFD54F;
+  text-align: center;
+  background: #FFFFFF;
+  line-height: 43px;
+  padding-top: 0;
+  padding-bottom: 9px;
+  margin-top: 34px;
+  margin-bottom: 0;
+  border-bottom: solid 5px #FFD54F;
+}
+
+.middle-date {
+  font-size: 45px;
+  color: #FFB74D;
+  text-align: center;
+  background: #FFFFFF;
+  line-height: 43px;
+  padding-top: 0;
+  padding-bottom: 9px;
+  margin-top: 34px;
+  margin-bottom: 0;
+  border-bottom: solid 5px #FFB74D;
+}
+
+.right-date {
+  font-size: 45px;
+  color: #FFA000;
+  text-align: center;
+  background: #FFFFFF;
+  line-height: 43px;
+  padding-top: 0;
+  padding-bottom: 9px;
+  margin-top: 34px;
+  margin-bottom: 0;
+  border-bottom: solid 5px #FFA000;
+}
+

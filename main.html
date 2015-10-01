@@ -1,0 +1,71 @@
+<!-- navbar -->
+<div class="container-fluid nav">
+  <div class="container" id="nav-container">
+    <header class="main-header">
+      <div class="site-logo" href="/">
+        Weatherly
+      </div>
+      <form ng-submit="submit()" class="nav-form" role="form">
+        <div class="form-group container">
+          <input type="text" class="form-control" ng-autocomplete ng-model="searchResult" placeholder="Search by City or Place">
+        </div>
+  <!--       <button type="submit" class="btn btn-default">Submit</button> -->
+      </form>
+    </header>
+  </div>
+</div>
+
+<div class="row">
+  <div class="container-fluid today-container">
+    <div class="container today-section">
+      <p>Today</p>
+    </div>
+    <div class="container city-section">
+      <p>{{cityResults.city.name}}</p>
+    </div>
+    <div class="container icon-section">
+      <div ng-if="{{cityResults.list[3].weather[0].id}} >= 200 && <= 299">hello</div>
+      <p>{{cityResults.list[3].weather[0].id}}</p>
+      <img src="atmosphere.png">
+    </div>
+    <div class="container temperature-section">
+      <p>{{cityResults.list[3].main.temp}}º</p></p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-4 left-column">
+      <img src="atmosphere.png" class="icon-column">
+      <p class="left-temperature">{{cityResults.list[3].main.temp}}º</p>
+      <p class="left-date">JUNE</p>
+    </div>
+    <div class="col-xs-4 middle-column">
+      <img src="atmosphere.png" class="icon-column">
+      <p class="middle-temperature">{{cityResults.list[3].main.temp}}º</p>
+      <p class="middle-date">JUNE</p>
+    </div>
+    <div class="col-xs-4 right-column">
+      <img src="atmosphere.png" class="icon-column">
+      <p class="right-temperature">{{cityResults.list[3].main.temp}}º</p>
+        <p class="right-date">JUNE</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- {{cityResults.list[11].dt_txt}} <br>
+{{cityResults.list[11].weather[0].id}} <br>
+{{cityResults.list[11].main.temp}} <br> <br>
+
+{{cityResults.list[19].dt_txt}} <br>
+{{cityResults.list[19].weather[0].id}} <br>
+{{cityResults.list[19].main.temp}} <br> <br>
+
+{{cityResults.list[27].dt_txt}} <br>
+{{cityResults.list[27].weather[0].id}} <br>
+{{cityResults.list[27].main.temp}} <br> <br> -->
