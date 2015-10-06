@@ -1,71 +1,48 @@
-<!-- navbar -->
+<!-- nav -->
 <div class="container-fluid nav">
-  <div class="container" id="nav-container">
-    <header class="main-header">
-      <div class="site-logo" href="/">
-        Weatherly
-      </div>
-      <form ng-submit="submit()" class="nav-form" role="form">
-        <div class="form-group container">
-          <input type="text" class="form-control" ng-autocomplete ng-model="searchResult" placeholder="Search by City or Place">
-        </div>
-  <!--       <button type="submit" class="btn btn-default">Submit</button> -->
-      </form>
-    </header>
+  <div class="site-logo">
+    <p>Weatherly</p>
   </div>
+  <form ng-submit="submit()" role="form">
+    <div class="form-group">
+      <input type="text" class="form-control" ng-autocomplete options="options" ng-model="searchResult" placeholder="Search by City">
+    </div>
+  </form>
 </div>
 
-<div class="row">
-  <div class="container-fluid today-container">
-    <div class="container today-section">
+<!-- today section -->
+<div class="row no-gutter">
+  <div class="today-container">
+    <div class="today-header">
       <p>Today</p>
     </div>
-    <div class="container city-section">
-      <p>{{cityResults.city.name}}</p>
+    <div class="today-city">
+      <p>{{cityName | uppercase}}</p>
     </div>
-    <div class="container icon-section">
-      <div ng-if="{{cityResults.list[3].weather[0].id}} >= 200 && <= 299">hello</div>
-      <p>{{cityResults.list[3].weather[0].id}}</p>
-      <img src="atmosphere.png">
+    <div class="today-icon">
+      <img ng-src="images/{{todayIcon}}.png">
     </div>
-    <div class="container temperature-section">
-      <p>{{cityResults.list[3].main.temp}}º</p></p>
+    <div class="today-temperature">
+      <p>{{todayTemp}}º</p>
     </div>
   </div>
 </div>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-xs-4 left-column">
-      <img src="atmosphere.png" class="icon-column">
-      <p class="left-temperature">{{cityResults.list[3].main.temp}}º</p>
-      <p class="left-date">JUNE</p>
-    </div>
-    <div class="col-xs-4 middle-column">
-      <img src="atmosphere.png" class="icon-column">
-      <p class="middle-temperature">{{cityResults.list[3].main.temp}}º</p>
-      <p class="middle-date">JUNE</p>
-    </div>
-    <div class="col-xs-4 right-column">
-      <img src="atmosphere.png" class="icon-column">
-      <p class="right-temperature">{{cityResults.list[3].main.temp}}º</p>
-        <p class="right-date">JUNE</p>
-      </div>
-    </div>
+<!-- future section -->
+<div class="row no-gutter">
+  <div class="col-xs-4 left-column">
+    <img ng-src="images/{{futureIcon1}}.png" class="icon-column">
+    <p class="left-temperature">{{futureTemp1}}º</p>
+    <p class="left-date">{{futureDate1 | uppercase}}</p>
+  </div>
+  <div class="col-xs-4 middle-column">
+    <img ng-src="images/{{futureIcon2}}.png" class="icon-column">
+    <p class="middle-temperature">{{futureTemp2}}º</p>
+    <p class="middle-date">{{futureDate2 | uppercase}}</p>
+  </div>
+  <div class="col-xs-4 right-column">
+    <img ng-src="images/{{futureIcon3}}.png" class="icon-column">
+    <p class="right-temperature">{{futureTemp3}}º</p>
+    <p class="right-date">{{futureDate3 | uppercase}}</p>
   </div>
 </div>
-
-
-
-
-<!-- {{cityResults.list[11].dt_txt}} <br>
-{{cityResults.list[11].weather[0].id}} <br>
-{{cityResults.list[11].main.temp}} <br> <br>
-
-{{cityResults.list[19].dt_txt}} <br>
-{{cityResults.list[19].weather[0].id}} <br>
-{{cityResults.list[19].main.temp}} <br> <br>
-
-{{cityResults.list[27].dt_txt}} <br>
-{{cityResults.list[27].weather[0].id}} <br>
-{{cityResults.list[27].main.temp}} <br> <br> -->

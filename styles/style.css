@@ -1,53 +1,46 @@
-body {
+html, body {
   font-family: Bitter;
-  margin: 0;
-  padding: 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
-p {
-  margin: 0;
-  padding: 0;
-}
-
-.container-fluid {
-  padding-right: 0;
-}
-
-.col-xs-4 {
-  padding-left: 0;
-  padding-right: 0;
+.no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
 }
 
 .today-container {
-  height: 388px;
+  height: 420px;
   background-color: #F8E71C;
   margin: 0;
   padding: 0;
 }
 
-.today-section {
+.today-header {
   font-size: 15px;
   color: #FFFFFF;
   text-align: center;
-  padding-top: 52px;
-  padding-bottom: 5px;
+  padding-top: 54px;
+  padding-bottom: 0;
   margin-top: 0;
   margin-bottom: 0;
   line-height: 16px;
 }
 
-.city-section {
+.today-city {
   font-size: 35px;
   color: #FFFFFF;
   text-align: center;
   padding-top: 0;
-  padding-bottom: 16px;
+  padding-bottom: 13px;
   margin-top: 0;
   margin-bottom: 0;
   line-height: 27px;
 }
 
-.icon-section {
+.today-icon {
   text-align: center;
   padding-top: 0;
   padding-bottom: 25px;
@@ -55,7 +48,7 @@ p {
   margin-bottom: 0;
 }
 
-.temperature-section {
+.today-temperature {
   font-size: 180px;
   color: #FFFFFF;
   text-align: center;
@@ -69,56 +62,39 @@ p {
 .left-column {
   background-color: #FFD54F;
   font: #FFFFFF;
-  height: 186px;
+  height: 176px;
   text-align: center;
 }
 
 .middle-column {
   background-color: #FFB74D;
   font: #FFFFFF;
-  height: 186px;
+  height: 176px;
   text-align: center;
 }
 
 .right-column {
   background-color: #FFA000;
   font: #FFFFFF;
-  height: 186px;
+  height: 176px;
   text-align: center;
 }
 
 .icon-column {
-  padding-top: 24px;
-  padding-bottom: 15px;
+  padding-top: 25px;
+  padding-bottom: 17px;
   margin-top: 0;
   margin-bottom: 0;
+  max-height: 91px;
 }
 
-.left-temperature {
-  font-size: 85px;
-  color: #FFFFFF;
-  padding-top: 0;
-  padding-bottom: 0px;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 60px;
-}
-
-.middle-temperature {
-  font-size: 85px;
-  color: #FFFFFF;
-  padding-top: 0;
-  padding-bottom: 0px;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 60px;
-}
-
+.left-temperature,
+.middle-temperature,
 .right-temperature {
   font-size: 85px;
   color: #FFFFFF;
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 0px;
   margin-top: 0;
   margin-bottom: 0;
   line-height: 60px;
@@ -130,7 +106,7 @@ p {
   text-align: center;
   background: #FFFFFF;
   line-height: 43px;
-  padding-top: 0;
+  padding-top: 2px;
   padding-bottom: 9px;
   margin-top: 34px;
   margin-bottom: 0;
@@ -143,7 +119,7 @@ p {
   text-align: center;
   background: #FFFFFF;
   line-height: 43px;
-  padding-top: 0;
+  padding-top: 2px;
   padding-bottom: 9px;
   margin-top: 34px;
   margin-bottom: 0;
@@ -156,10 +132,9 @@ p {
   text-align: center;
   background: #FFFFFF;
   line-height: 43px;
-  padding-top: 0;
+  padding-top: 2px;
   padding-bottom: 9px;
   margin-top: 34px;
   margin-bottom: 0;
   border-bottom: solid 5px #FFA000;
 }
-

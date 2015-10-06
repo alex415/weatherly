@@ -2,28 +2,20 @@
 
 .container-fluid.nav {
   margin-right: -15px;
-}
-
-#nav-container {
-  width: 100%;
-  padding: 0;
-  margin: 0;
   border-bottom: 2px solid #D8D8D8;
-}
-
-.main-header {
+  text-align: center;
 }
 
 .site-logo {
-  margin-top: -7px;
-  float: left;
+  margin: 0 auto;
   font-family: Bitter;
   font-size: 48px;
   color: #F7A519;
-  line-height: 85px;
+  line-height: 70px;
   background-color: #FFFFFF;
-  padding-right: 60px;
-  padding-left: 40px;
+  padding-left: 35px;
+  padding-right: 50px;
+  float: left;
 }
 
 .form-group {
@@ -33,20 +25,12 @@
   margin-bottom: 0;
 }
 
-.form-group.container {
-  padding-right: 0;
-}
-
-.nav-form {
-/*  text-align: center;*/
-}
-
 .form-control {
   font-size: 25px;
   border-radius: 0;
   color: #D8D8D8;
   border: solid 2px #D8D8D8;
-  max-width: 640px;
+  width: 640px;
   height: 50px;
 }
 
@@ -54,12 +38,24 @@
   color: #F7A519;
 }
 
+.form-control::-webkit-input-placeholder {
+  color: #D8D8D8;
+}
+
 textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
   border-color: #F7A519;
   box-shadow: 0 0px 0px #F7A519;
 }
 
-.form-control::-webkit-input-placeholder {
-  color: #D8D8D8;
-/*  font-family: 'myFont', Arial, Helvetica, sans-serif;*/
+@media (max-width: 954px) {
+  .form-control {
+    width: 100%;
+    text-align: center;
+  }
+
+  .site-logo {
+    float: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
