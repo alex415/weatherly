@@ -1,4 +1,6 @@
-Installation:
+Description:
+
+Weather app using the OpenWeatherMap API
 
 You will need http-server installed to run this locally.
 
