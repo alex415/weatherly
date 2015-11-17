@@ -15,5 +15,4 @@ A weather app that will pull a four-day forecast
 * Moment.js
 
 ## Wireframes
-![Alt text](/instructions.pdf "Wireframe")
-
+![Alt text](/instructions.png "Wireframe")
