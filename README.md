@@ -1,13 +1,19 @@
-Description:
+# Weatherly
 
-Weather app using the OpenWeatherMap API
+## Overview
+A weather app that will pull a four-day forecast
 
-You will need http-server installed to run this locally.
+## Steps to Run Locally
+1. Clone project repo
+2. Install npm module "http-server"
+3. Start http-server.
 
-1. Install http-server:
-  
-  sudo npm install http-server -g
+## Technologies Used
+* Open Weather Map API
+* AngularJS
+* Bootstrap
+* Moment.js
 
-2. In the terminal, navigate to the "weatherly" folder and enter "http-server"
+## Wireframes
+![Alt text](/instructions.pdf "Wireframe")
 
-3. Open web browser and enter "localhost:8080" to view the project.
